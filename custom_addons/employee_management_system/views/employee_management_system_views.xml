@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form" model="ir.ui.view">
+        <field name="name">emp.employee.form</field>
+        <field name="model">emp.employee</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="first_name"/>
+                        <field name="last_name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="date_of_birth"/>
+                        <field name="gender"/>
+                        <field name="address"/>
+                        <field name="hire_date"/>
+                        <field name="salary"/>
+                        <field name="position"/>
+                        <field name="department_id"/>
+                        <field name="skill_ids" widget="many2many_tags"/>
+                    </group>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+
+    <record id="view_employee_list" model="ir.ui.view">
+        <field name="name">emp.employee.list</field>
+        <field name="model">emp.employee</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="email"/>
+                <field name="position"/>
+                <field name="department_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_employee_kanban" model="ir.ui.view">
+        <field name="name">emp.employee.kanban</field>
+        <field name="model">emp.employee</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="o_kanban_record">
+                            <div class="o_kanban_record_top">
+                                <strong>
+                                    <field name="first_name"/> <field name="last_name"/>
+                                </strong>
+                            </div>
+                            <div>
+                                <span><strong>Position:</strong> <field name="position"/></span><br/>
+                                <span><strong>Department:</strong> <field name="department_id"/></span><br/>
+                                <span><strong>Skills:</strong></span>
+                                <div>
+                                    <field name="skill_ids" widget="many2many_tags"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>

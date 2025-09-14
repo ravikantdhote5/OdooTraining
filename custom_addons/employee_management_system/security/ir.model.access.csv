@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_emp_skill_manager,access_emp_skill_manager,model_emp_skill,your_module.group_skill_manager,1,1,1,1
+
+
