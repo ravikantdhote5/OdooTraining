@@ -14,10 +14,10 @@
     'depends': ['base'],
     'data': [
         'security/emp_groups.xml',
-        'views/employee_management_system_menus.xml',
         'security/ir.model.access.csv',
+        'views/employee_management_system_menus.xml',
         'views/employee_management_system_views.xml',
-        'views/employee_skills_views.xml'
+        'views/employee_skills_views.xml',
     ],
     'installable': True,
     'application': True,

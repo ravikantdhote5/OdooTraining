@@ -1,4 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_emp_skill_manager,access_emp_skill_manager,model_emp_skill,your_module.group_skill_manager,1,1,1,1
+access_emp_skill_manager,access_emp_skill_manager,model_emp_skill,employee_management_system.group_skill_manager,1,1,1,1
+access_emp_employee_manager,access_emp_employee_manager,model_emp_employee,employee_management_system.group_skill_manager,1,1,1,1
+access_emp_department_manager,access_emp_department_manager,model_emp_department,employee_management_system.group_skill_manager,1,1,1,1
 
+access_emp_skill_hr,access_emp_skill_hr,model_emp_skill,hr.group_hr_user,1,1,1,1
+access_emp_employee_hr,access_emp_employee_hr,model_emp_employee,hr.group_hr_user,1,1,1,1
+access_emp_department_hr,access_emp_department_hr,model_emp_department,hr.group_hr_user,1,1,1,1
 
+access_emp_employee_user,access_emp_employee_user,model_emp_employee,base.group_user,1,1,1,1
+access_emp_department_user,access_emp_department_user,model_emp_department,base.group_user,1,1,1,1

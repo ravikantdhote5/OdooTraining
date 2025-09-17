@@ -16,3 +16,5 @@ class Skill(models.Model):
         'employee_id',
         string='Employees'
     )
+
+
